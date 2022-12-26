@@ -14,8 +14,16 @@ echo $commit_old
 if [ $commit_id == $commit_old ];
 
 then 
-	echo " same id "
+	echo " No new commits "
 else
-	echo " new commit id "
+	echo " new commit id found "
+
+	git checkout 
+
+
+	find /mnt/dev/ -name "*.env" -exec sed -i 's/APP_ENV=LOCAL/APP_ENV=DEV/g' {} \;
+
+	find /mnt/testing/ -name "*.env" -exec sed -i 's/APP_ENV=LOCAL/APP_ENV=TEST/g' {} \;
+
 fi
 
