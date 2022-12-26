@@ -17,9 +17,9 @@ then
 	echo " No new commits "
 else
 	echo " new commit id found "
-
-
-
+	
+	git checkout test
+	git merge dev
 
 fi
 
