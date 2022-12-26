@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/amithkb21/demo.git ./dev
+git clone https://github.com/amithkb21/demo.git dev
 
 find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/APP_ENV=LOCAL/APP_ENV=DEV/g' {} \;
 
