@@ -1,7 +1,7 @@
 #!/bin/bash
 
 origin="origin"
-branch="dev"
+branch="deploy"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo $commit_id_latest
 
@@ -15,7 +15,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-	git merge dev
+	git merge test
 
 #testing
 
