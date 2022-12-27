@@ -1,10 +1,28 @@
 #!/bin/bash
 
-git pull origin master
+origin="origin"
+branch="master"
+new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+echo $commit_id_latest
 
-find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/APP_ENV=LOCAL/APP_ENV=DEV/g' {} \;
+old_commit_id=$(</home/amitayare/file1.txt) 
 
-find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/APP_ENV=LOCAL/APP_ENV=TEST/g' {} \;
+echo "$value"  
+
+if [ $new_commit_id == $old_commit_id ];
+
+then 
+	echo " NO new commits "
+else
+	echo " new commit id is FOUND "
+
+
+
+
+commit_save=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+echo $commit_save > /home/amitayare/file1.txt 
+
+fi
 
 
 
