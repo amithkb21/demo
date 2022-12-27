@@ -20,7 +20,7 @@ else
 	
 	git add --all
 	git commit -m " COMMIT CODE "
-	git push origin test
+	git push origin deploy
 	
 	git checkout test
 	git merge deploy
