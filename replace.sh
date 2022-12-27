@@ -1,14 +1,12 @@
 #!/bin/bash
 
 origin="origin"
-branch="test"
+branch="dev"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
-echo "Amit new id $new_commit_id"
-echo $new_commit_id
+echo $commit_id_latest
 
 old_commit_id=$(</home/amitayare/file1.txt) 
 
-echo "$old_commit_id"  
 
 if [ $new_commit_id == $old_commit_id ];
 
@@ -17,18 +15,17 @@ then
 else
 	echo " new commit id is FOUND "
 
-commit_save=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+	git checkout dev
+	git merge test
+
+#testing
+
+
 
 commit_save=$new_commit_id
 echo $new_commit_id > /home/amitayare/file1.txt 
-
-
 echo $commit_save
-echo " new id $commit_save"
 
 fi
-
-
-
 
 
