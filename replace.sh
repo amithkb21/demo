@@ -15,8 +15,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-	git checkout dev
-	git merge test
+	git merge dev
 
 #testing
 
