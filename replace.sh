@@ -19,8 +19,7 @@ else
 	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
 	
 	git add --all
-	git commit -m " COMMIT CODE " 
-	git pull origin test
+	git commit -m " COMMIT CODE "
 	git push origin test
 	
 	git checkout test
