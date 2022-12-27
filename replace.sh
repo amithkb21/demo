@@ -17,7 +17,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-commit_save=$(git log -n 1 --pretty=format:%H "$origin/$dev")
+commit_save=new_commit_id
 echo $commit_save > /home/amitayare/file1.txt 
 
 echo $commit_save
