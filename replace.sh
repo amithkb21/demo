@@ -17,13 +17,14 @@ else
 	
 	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
 	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
-	
+
 	git checkout test
 	git merge deploy
 
+	git add --all
+        git commit -m " COMMIT CODE "
+
 #testing
-
-
 
 commit_save=$new_commit_id
 echo $new_commit_id > /home/amitayare/file1.txt 
