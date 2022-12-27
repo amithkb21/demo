@@ -14,9 +14,12 @@ then
 	echo " NO new commits "
 else
 	echo " new commit id is FOUND "
-
-	git checkout test
-	git merge deploy
+	
+	find /mnt/Test/dev -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
+	find /mnt/Test/testing -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
+	
+	#git checkout test
+	#git merge deploy
 
 #testing
 
