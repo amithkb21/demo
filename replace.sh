@@ -19,6 +19,7 @@ else
 
 commit_save=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo $commit_save > /home/amitayare/file1.txt 
+echo $commit_save
 
 echo $commit_save
 echo " new id $commit_save"
