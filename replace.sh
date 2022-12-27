@@ -17,6 +17,8 @@ else
 
 	git merge dev
 
+#testing
+
 
 
 commit_save=$new_commit_id
