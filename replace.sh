@@ -2,7 +2,7 @@
 
 origin="origin"
 branch="test"
-new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$dev")
+new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo " new id $new_commit_id"
 echo $new_commit_id
 
