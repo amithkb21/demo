@@ -15,8 +15,8 @@ then
 else
 	echo " new commit id is FOUND "
 	
-	find /mnt/Test/dev -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
-	find /mnt/Test/testing -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
+	find /var/www/html/wl2/dev/ -name "*.env" -exec sed -i 's/LOCAL/DEV/g' {} \;
+	find /var/www/html/wl2/testing/ -name "*.env" -exec sed -i 's/LOCAL/TEST/g' {} \;
 	
 	#git checkout test
 	#git merge deploy
