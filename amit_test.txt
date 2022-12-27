@@ -1,1 +1,2 @@
 Hello and Welocme to thw worl of git merging world
+This is a sample file
