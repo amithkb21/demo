@@ -15,7 +15,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-	git merge test
+	git merge deploy
 
 #testing
 
