@@ -20,7 +20,7 @@ else
 
 
 commit_save=$new_commit_id
-echo $commit_save > /home/amitayare/file1.txt 
+echo $new_commit_id > /home/amitayare/file1.txt 
 echo $commit_save
 
 fi
