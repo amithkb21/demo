@@ -3,6 +3,7 @@
 origin="origin"
 branch="master"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+echo " new id $new_commit_id"
 echo $new_commit_id
 
 old_commit_id=$(</home/amitayare/file1.txt) 
@@ -20,7 +21,7 @@ commit_save=$(git log -n 1 --pretty=format:%H "$origin/$branch")
 echo $commit_save > /home/amitayare/file1.txt 
 
 echo $commit_save
-
+echo " new id $commit_save"
 
 fi
 
