@@ -17,7 +17,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-commit_save=new_commit_id
+commit_save=$new_commit_id
 echo $commit_save > /home/amitayare/file1.txt 
 
 echo $commit_save
