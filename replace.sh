@@ -15,7 +15,8 @@ then
 else
 	echo " new commit id is FOUND "
 
-	git merge dev
+	git checkout dev
+	git merge test
 
 #testing
 
@@ -26,6 +27,5 @@ echo $new_commit_id > /home/amitayare/file1.txt
 echo $commit_save
 
 fi
-
 
 
