@@ -3,7 +3,7 @@
 origin="origin"
 branch="test"
 new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
-echo " new id $new_commit_id"
+echo "Amit new id $new_commit_id"
 echo $new_commit_id
 
 old_commit_id=$(</home/amitayare/file1.txt) 
