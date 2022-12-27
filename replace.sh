@@ -1,8 +1,8 @@
 #!/bin/bash
 
 origin="origin"
-branch="master"
-new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+branch="dev"
+new_commit_id=$(git log -n 1 --pretty=format:%H "$origin/$dev")
 echo " new id $new_commit_id"
 echo $new_commit_id
 
@@ -17,7 +17,7 @@ then
 else
 	echo " new commit id is FOUND "
 
-commit_save=$(git log -n 1 --pretty=format:%H "$origin/$branch")
+commit_save=$(git log -n 1 --pretty=format:%H "$origin/$dev")
 echo $commit_save > /home/amitayare/file1.txt 
 
 echo $commit_save
